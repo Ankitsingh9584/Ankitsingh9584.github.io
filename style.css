@@ -728,7 +728,26 @@ section .title::after {
     color: #ffcc00;
     background: none;
 }
-
+.main-text{
+	text-align: center;
+    color: white;
+}
+.main-text h2{
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+.github{
+    background-color:#111111;
+}
+.cal{
+    width: 80%;
+    margin: auto;
+ 
+}
+.cal div{
+	text-align: center;
+    
+}
 /* footer section styling */
 
 footer {
