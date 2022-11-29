@@ -485,6 +485,13 @@ section .title::after {
     width: 70%;
 }
 
+/* github stats section*/
+
+.github_stats{
+   
+    text-align: center;
+}
+
 /* project section styling */
 
 .project .title::after {
