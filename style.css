@@ -54,14 +54,18 @@ footer {
 
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+
 .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
-
+.skills-content{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:85px
+}
 section .title {
     position: relative;
     text-align: center;
@@ -383,33 +387,33 @@ section .title::after {
 /* skills section styling */
 
 .skills-images img {
-    height: 150px;
-    width: 130px;
+    height: 120px;
+    width: 120px;
     /* object-fit: cover; */
     border-radius: 5%;
     /* border: 5px solid crimson; */
     transition: all 0.3s ease;
 }
-
+.skills-images p{
+    text-align: center;
+    
+    font-weight: bold;
+}
+.skills-images:hover{
+   
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 .skills .title::after {
     content: "what i know";
 }
 
 /* skills right column */
 
-.skills .skills-content .column {
-    width: calc(50% - 25px);
-    /* border: 2px solid black; */
-    height: 60vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 
-.skills .skills-content .left .text {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
 
 .skills .skills-content .left p {
     text-align: justify;
@@ -609,8 +613,13 @@ section .title::after {
 }
 
 .skills-images {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 178px;
+    margin: auto;
+    text-align: center;
+}
+.skills-images img{
+    margin-top: 15px;
 }
 
 /* contact section styling */
@@ -786,6 +795,11 @@ footer span a:hover {
     .max-width {
         padding: 0 50px;
     }
+    .skills-content{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:35px
+    }
 }
 
 @media (max-width: 947px) {
@@ -846,7 +860,7 @@ footer span a:hover {
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
-    .skills .skills-content .column,
+    
     .contact .contact-content .column {
         width: 100%;
         margin-bottom: 35px;
@@ -868,6 +882,11 @@ footer span a:hover {
     }
     .services .serv-content .card {
         width: 100%;
+    }
+    .skills-content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:85px
     }
 }
 
@@ -899,5 +918,10 @@ footer span a:hover {
         width: 35px;
         font-size: 23px;
         line-height: 38px;
+    }
+    .skills-content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:85px
     }
 }
