@@ -866,8 +866,16 @@ footer span a:hover {
         margin-bottom: 35px;
     }
 }
+@media (max-width: 1189px) {
+    
+    .skills-content{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap:25px
+    }
+}
 
-@media (max-width: 690px) {
+@media (max-width: 738px) {
     .max-width {
         padding: 0 23px;
     }
@@ -886,11 +894,11 @@ footer span a:hover {
     .skills-content{
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        gap:85px
+        gap:25px
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 545px) {
     .home .home-content .text-2 {
         font-size: 50px;
     }
@@ -922,6 +930,10 @@ footer span a:hover {
     .skills-content{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap:85px
+        gap:15px
     }
+    .github_stats img{
+        width: 320px;
+    }
+   
 }
